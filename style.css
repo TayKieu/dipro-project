@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+.content{
+    background: url("./assets/background.jpg") no-repeat center center fixed;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: url("./assets/background.jpg") no-repeat center center fixed;
+    height: 100vh;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+.logo {
+    width: 50px;
+}
+
+.products-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 50px;
+}
+
+.section-title span {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ff6347;
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 10px 0 30px 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: black;
+    padding: 20px;
+    width: 250px;
+    border: 2px solid white;
+    text-align: center;
+}
+.product-card:hover{
+    border: 2px solid blue;
+}
+
+.product-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ff6347;
+    margin: 0 auto 20px auto;
+}
+
+.matte {
+    background-color: #cb0d45;
+}
+.semi-gloss {
+    background-color: #cb0d45;
+}
+.high-gloss {
+    background-color: #cb0d45;
+}
+
+.product-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.explore {
+    text-decoration: none;
+    color: #00f;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.explore:hover {
+    color: #ff6347;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    flex-shrink: 0;
+    grid-row-start: 3;
+}
+@media (max-width: 1200px) {
+    .section-title span {
+        font-size: 40px;
+    }
+    .product-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .product-card {
+        width: 180px;
+    }
+    .section-title span {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .products-section {
+        margin: 20px;
+        padding: 20px 0;
+    }
+    .section-title span {
+        font-size: 30px;
+    }
+    .product-card {
+        width: 150px;
+    }
+    .product-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .product-card h2 {
+        font-size: 18px;
+    }
+    .product-card p {
+        font-size: 14px;
+    }
+    .explore {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-section {
+        margin: 10px;
+        padding: 10px 0;
+    }
+    .section-title span {
+        font-size: 25px;
+    }
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .product-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .product-card h2 {
+        font-size: 16px;
+    }
+    .product-card p {
+        font-size: 12px;
+    }
+    .explore {
+        font-size: 12px;
+    }
+}
